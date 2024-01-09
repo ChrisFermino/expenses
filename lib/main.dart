@@ -50,17 +50,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Transaction> _transactions = [
-    Transaction(id: '1', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '2', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '3', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '4', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '5', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '6', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '7', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '8', title: 'batata', value: 10, date: DateTime.now()),
-    Transaction(id: '9', title: 'batata', value: 10, date: DateTime.now()),
-  ];
+  final List<Transaction> _transactions = [];
 
   bool _showChart = false;
 
@@ -147,11 +137,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () => _openTransactionFormModal(context),
-      //   child: const Icon(Icons.add),
-      // ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
